@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="rowlistScene" extends="baseScene">
+<script type="text/brightscript" uri="rowlistScene.brs"/>
+<children>
+ <rectangle
+    id="background"
+    width="1920"
+    height="1080"
+    color="#483D8B"/>
+
+    <Label
+    translation="[75, 150]"
+    id="env"
+    font="font:LargeBoldSystemFont"/>
+    <RadioButtonList
+    id="category_list"
+    translation="[100, 200]"
+    itemSize="[500,48]"
+    >
+    <ContentNode id = "categories" role = "content" >
+    <ContentNode title = "Inicio"/>
+    <ContentNode title = "Buscar"/>
+    <ContentNode title = "Canales"/>
+    </ContentNode>
+    </RadioButtonList>
+
+
+    <simpleLabel id="simpleLabelName" fontSize = "70"/>
+    <rowList id="rowlist"/>
+    <Label id="LabelDescription" width="1000"/>
+</children>
+    
+</component>

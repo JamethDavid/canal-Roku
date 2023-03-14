@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="selecion" extends="BaseScene">
+    <interface>
+        <field id="index" type="integer" alwaysNotify="true" onChange="onIndexChange"/>
+        <field id="maxIndex" type="integer"/>
+    </interface>
+    <script type="text/brightscript" uri="selecion.brs" />
+    <children>
+        <rectangle
+            id="background"
+            width="1920"
+            height="1080"
+            color="#CD5C5C"/>
+        <LayoutGroup id="layoutGroup" itemSpacings="[100]" horizAlignment="center" >
+            <Label
+                id="label"
+                font="font:MediumBoldSystemFont"
+                text="Pantalla 1?" />
+            <LayoutGroup
+                id="profiles"
+                layoutDirection="horiz"
+                itemSpacings="[100]" />
+        </LayoutGroup>
+    </children>
+</component>

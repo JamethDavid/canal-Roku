@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="loginScene" extends="baseScene">
+    <script type="text/brightscript" uri="loginScene.brs" />
+    <children>
+        <rectangle
+            id="background"
+            width="1920"
+            height="1080"
+            color="#483D8B" />
+        <LayoutGroup id="layoutGroup" itemSpacings="[30]" horizAlignment="center" >
+            <Label
+                id="label"
+                font="font:MediumBoldSystemFont"
+                text="Sign In" />
+            <TextEditBox
+                id="email"
+                hintText="Enter your email"
+                active="true"
+                clearOnDownKey="false"
+                maxTextLength="75"
+                width="500" />
+            <TextEditBox
+                id="password"
+                hintText="Enter your password"
+                clearOnDownKey="false"
+                secureMode="true"
+                width="500"
+                translation="[0, 100]" />
+            <customButton
+                id="button"
+                width="120"
+                height="60"
+                text="Done" />
+        </LayoutGroup>
+    </children>
+</component>
